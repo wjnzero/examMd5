@@ -8,6 +8,7 @@ import {Product} from '../../model/product';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
+  count:number;
   products: Product[] = [];
 
   constructor(private productService: ProductService) {
@@ -20,6 +21,7 @@ export class ProductListComponent implements OnInit {
   getAll() {
     this.productService.getAll().subscribe(products => {
       this.products = products;
+      this.count=this.products.length;
     });  }
 
 }
