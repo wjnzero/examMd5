@@ -1,0 +1,21 @@
+<h1>Thông tin sản phẩm</h1>
+<form [formGroup]="productForm" >
+  <table>
+    <tr>
+      <td>Tên sản phẩm:</td>
+      <td><input type="text" disabled formControlName="title"></td>
+    </tr>
+    <tr>
+      <td>Giá sản phẩm</td>
+      <td><input type="text" disabled formControlName="price"></td>
+    </tr>
+    <tr>
+      <td>Mô tả về sản phẩm</td>
+      <td><input type="text" disabled formControlName="description"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button routerLink="/product/list">Trở lại</button></td>
+    </tr>
+  </table>
+</form>
